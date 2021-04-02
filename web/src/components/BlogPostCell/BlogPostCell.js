@@ -1,3 +1,13 @@
+export const QUERY = gql`
+  query BlogPostQuery($id: Int!) {
+    post(id: $id) {
+      id
+      title
+      body
+      createdAt
+    }
+  }
+`
 import BlogPost from 'src/components/BlogPost'
 
 export const Loading = () => <div>Loading...</div>
